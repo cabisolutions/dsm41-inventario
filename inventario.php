@@ -41,7 +41,7 @@
 </header>
 
   <?php 
-    $conexion = mysqli_connect("localhost", "root", "", "ec0727");
+    $conexion = mysqli_connect("db4free.net", "dsm41inventario", "12345678", "ec0727", "3306");
 
     if(isset($_REQUEST['registrar'])){
         $clave = $_POST['clave'];
