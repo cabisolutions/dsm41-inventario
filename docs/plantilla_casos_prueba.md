@@ -1,4 +1,4 @@
-# Plantilla de prueba
+# Plantilla casos de prueba
 
 ## ID
 Aqui el ID
