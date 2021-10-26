@@ -15,6 +15,8 @@ Título
 ## Descripción
 Elit nostrud tempor anim adipisicing dolor fugiat ex labore qui. Consectetur irure excepteur occaecat laborum irure labore ipsum in aliquip exercitation. Ea esse ea laboris tempor fugiat nostrud cupidatat adipisicing duis.
 
+## Software de prueba
+Ejemplo: Jmeter
 ## Precondiciones
 - Sit qui veniam occaecat nisi do tempor laboris do voluptate. 
 - Laborum ad sunt proident minim magna ad cupidatat quis ad irure eiusmod incididunt minim nulla. 
