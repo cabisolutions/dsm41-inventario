@@ -32,7 +32,7 @@
     <tbody>
         <tr>
             <td>1</td>
-            <td>9 de noviembre 2021, 6:10PM</td>
+            <td>Prueba en peticion post</td>
             <td>Elit nostrud tempor anim adipisicing dolor fugiat ex labore qui. Consectetur irure excepteur occaecat laborum irure labore ipsum in aliquip exercitation. Ea esse ea laboris tempor fugiat nostrud cupidatat adipisicing duis.</td>
         </tr>
     </tbody>
@@ -63,7 +63,7 @@ Hacer Z
     </tbody>
 </table>
 
-## Resultados
+## Resultado
 
 <table>
     <thead>
