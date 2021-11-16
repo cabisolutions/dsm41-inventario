@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <title>Formulario casos prueba</title>
+</head>
+
+<body>
+    <div class="container mx-auto py-10">
+        <h1 class="inline-block text-3xl font-extrabold text-gray-900 tracking-tight mb-4">
+            Plantilla casos de prueba
+        </h1>
+
+        <h2 class="text-2xl font-bold text-gray-800 tracking-tight mb-3">
+            Información
+        </h2>
+
+        <table class="table-fixed w-full text-left border-collapse border border-gray-200 mb-4">
+            <thead>
+                <th class="border border-gray-200 px-3 py-2">ID</th>
+                <th class="border border-gray-200 px-3 py-2">Fecha y hora</th>
+                <th class="border border-gray-200 px-3 py-2">Prioridad</th>
+                <th class="border border-gray-200 px-3 py-2">Tipo de prueba</th>
+                <th class="border border-gray-200 px-3 py-2">Clase</th>
+                <th class="border border-gray-200 px-3 py-2">Software utilizado</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="border border-gray-200">
+                        <input placeholder="001" type="number" name="id" id="id" class="form-input px-4 py-4 w-full">
+                    </td>
+                    <td class="border border-gray-200">
+                        <input type="datetime-local" name="fechaHora" id="fechaHora" class="form-input px-4 py-4 w-full">
+                    </td>
+                    <td class="border border-gray-200">
+                        <select name="prioridad" id="prioridad" class="form-input px-4 py-4 w-full">
+                            <option value="Baja">Baja</option>
+                            <option value="Media" selected>Media</option>
+                            <option value="Alta">Alta</option>
+                        </select>
+                    </td>
+                    <td class="border border-gray-200">
+                        <input placeholder="Unitaria" type="text" name="tipoPrueba" id="tipoPrueba" class="form-input px-4 py-4 w-full">
+                    </td>
+                    <td class="border border-gray-200">
+                        <select name="clase" id="clase" class="form-input px-4 py-4 w-full">
+                            <option value="Caja blanca">Caja blanca</option>
+                            <option value="Caja gris">Caja gris</option>
+                            <option value="Caja negra">Caja negra</option>
+                        </select>
+                    </td>
+                    <td class="border border-gray-200">
+                        <input placeholder="PHPUnit" type="text" name="software" id="software" class="form-input px-4 py-4 w-full">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2 class="text-2xl font-bold text-gray-800 tracking-tight mb-3">
+            Prueba
+        </h2>
+
+        <table class="table-fixed w-full text-left border-collapse border border-gray-200 mb-4">
+            <thead>
+                <th class="border border-gray-200 px-3 py-2">Subsección</th>
+                <th class="border border-gray-200 px-3 py-2">Nombre</th>
+                <th class="border border-gray-200 px-3 py-2">Descripción</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="border border-gray-200">
+                        <select name="" id="" class="form-input px-4 py-4 w-full">
+                            <option value="Estructura HTML y funcionalidad en distintos SO y tamaños de pantalla">
+                                Estructura HTML y funcionalidad en distintos SO y tamaños de pantalla</option>
+                            <option value="Registro de nuevo artículo">Registro de nuevo artículo</option>
+                            <option value="Listado y eliminación de artículos">Listado y eliminación de artículos
+                            </option>
+                            <option value="Base de datos">Base de datos</option>
+                        </select>
+                    </td>
+                    <td class="border border-gray-200">
+                        <textarea placeholder="Petición POST con datos erróneos" name="" id="" cols="30" rows="10"
+                            class="form-input px-4 py-4 w-full"></textarea>
+                    </td>
+                    <td class="border border-gray-200">
+                        <textarea
+                            placeholder="Se envian datos erróneos en una petición POST esperando que los datos no sean aceptados por la parte del código que recibe la petición"
+                            name="" id="" cols="30" rows="10" class="form-input px-4 py-4 w-full"></textarea>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+
+        <table class="table-fixed w-full text-left border-collapse border border-gray-200 mb-4">
+            <thead>
+                <th class="border border-gray-200 px-3 py-2">Precondiciones</th>
+                <th class="border border-gray-200 px-3 py-2">Datos de prueba</th>
+                <th class="border border-gray-200 px-3 py-2">Procedimiento</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="border border-gray-200">
+                        <textarea placeholder="Se require estar logueado" name="" id="" cols="30" rows="10"
+                            class="form-input px-4 py-4 w-full"></textarea>
+                    </td>
+                    <td class="border border-gray-200">
+                        <textarea placeholder="Correo electrónico: prueba@gmail.com" name="" id="" cols="30" rows="10"
+                            class="form-input px-4 py-4 w-full"></textarea>
+                    </td>
+                    <td class="border border-gray-200">
+                        <textarea placeholder="Dentro de la carpeta test crear un nuevo archivo, Crear una nueva clase extendiendo a phpunitCrear una funciíon llamada testPOST
+                            " name="" id="" cols="30" rows="10" class="form-input px-4 py-4 w-full"></textarea>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2 class="text-2xl font-bold text-gray-800 tracking-tight mb-3">
+            Resultado
+        </h2>
+
+        <table class="table-fixed w-full text-left border-collapse border border-gray-200 mb-4">
+            <thead>
+                <th class="border border-gray-200 px-3 py-2">Esperado</th>
+                <th class="border border-gray-200 px-3 py-2">Actual</th>
+                <th class="border border-gray-200 px-3 py-2">Estatus</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td class="border border-gray-200">
+                        <textarea placeholder="El código encargado de recibir la petición regresa un error y no deja continuar"
+                            name="" id="" cols="30" rows="10" class="form-input px-4 py-4 w-full"></textarea>
+                    </td>
+                    <td class="border border-gray-200">
+                        <textarea placeholder="El código encargado de recibir la petición no regresa un error y deja continuar aun teniendo los datos mal"
+                            name="" id="" cols="30" rows="10" class="form-input px-4 py-4 w-full"></textarea>
+                    </td>
+                    <td class="border border-gray-200">
+                        <select name="" id="" class="form-input px-4 py-4 w-full">
+                            <option value="Pendiente" selected>Pendiente</option>
+                            <option value="Pasado">Pasado</option>
+                            <option value="Fallido">Fallido</option>
+                        </select>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2 class="text-2xl font-bold text-gray-800 tracking-tight mb-3">
+            Notas
+        </h2>
+        <textarea placeholder="  Se debe corregir la linea 18 del archivo inventario.php ya que deja continuar aun teniendo un error."
+                            name="" id="" cols="30" rows="7" class="form-input border border-gray-200 px-4 py-4 w-full"></textarea>
+        <button type="submit" id="btnProcesar" class="mt-4 p-2 pl-5 pr-5 bg-blue-500 text-gray-100 text-lg rounded-lg focus:border-4 border-blue-300 hover:bg-blue-600 transition-colors">Procesar</button>
+    </div>
+    <script src="js/app.js"></script>
+    
+</body>
+
+</html>
