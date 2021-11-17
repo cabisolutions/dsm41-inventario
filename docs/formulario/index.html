@@ -34,7 +34,8 @@
                         <input placeholder="001" type="number" name="id" id="id" class="form-input px-4 py-4 w-full">
                     </td>
                     <td class="border border-gray-200">
-                        <input type="datetime-local" name="fechaHora" id="fechaHora" class="form-input px-4 py-4 w-full">
+                        <input type="datetime-local" name="fechaHora" id="fechaHora"
+                            class="form-input px-4 py-4 w-full">
                     </td>
                     <td class="border border-gray-200">
                         <select name="prioridad" id="prioridad" class="form-input px-4 py-4 w-full">
@@ -44,7 +45,8 @@
                         </select>
                     </td>
                     <td class="border border-gray-200">
-                        <input placeholder="Unitaria" type="text" name="tipoPrueba" id="tipoPrueba" class="form-input px-4 py-4 w-full">
+                        <input placeholder="Unitaria" type="text" name="tipoPrueba" id="tipoPrueba"
+                            class="form-input px-4 py-4 w-full">
                     </td>
                     <td class="border border-gray-200">
                         <select name="clase" id="clase" class="form-input px-4 py-4 w-full">
@@ -54,7 +56,8 @@
                         </select>
                     </td>
                     <td class="border border-gray-200">
-                        <input placeholder="PHPUnit" type="text" name="software" id="software" class="form-input px-4 py-4 w-full">
+                        <input placeholder="PHPUnit" type="text" name="software" id="software"
+                            class="form-input px-4 py-4 w-full">
                     </td>
                 </tr>
             </tbody>
@@ -73,7 +76,7 @@
             <tbody>
                 <tr>
                     <td class="border border-gray-200">
-                        <select name="" id="" class="form-input px-4 py-4 w-full">
+                        <select name="subseccion" id="subseccion" class="form-input px-4 py-4 w-full">
                             <option value="Estructura HTML y funcionalidad en distintos SO y tamaños de pantalla">
                                 Estructura HTML y funcionalidad en distintos SO y tamaños de pantalla</option>
                             <option value="Registro de nuevo artículo">Registro de nuevo artículo</option>
@@ -83,13 +86,14 @@
                         </select>
                     </td>
                     <td class="border border-gray-200">
-                        <textarea placeholder="Petición POST con datos erróneos" name="" id="" cols="30" rows="10"
-                            class="form-input px-4 py-4 w-full"></textarea>
+                        <textarea placeholder="Petición POST con datos erróneos" name="nombre" id="nombre" cols="30"
+                            rows="10" class="form-input px-4 py-4 w-full"></textarea>
                     </td>
                     <td class="border border-gray-200">
                         <textarea
                             placeholder="Se envian datos erróneos en una petición POST esperando que los datos no sean aceptados por la parte del código que recibe la petición"
-                            name="" id="" cols="30" rows="10" class="form-input px-4 py-4 w-full"></textarea>
+                            name="descripcion" id="descripcion" cols="30" rows="10"
+                            class="form-input px-4 py-4 w-full"></textarea>
                     </td>
                 </tr>
             </tbody>
@@ -105,16 +109,17 @@
             <tbody>
                 <tr>
                     <td class="border border-gray-200">
-                        <textarea placeholder="Se require estar logueado" name="" id="" cols="30" rows="10"
-                            class="form-input px-4 py-4 w-full"></textarea>
+                        <textarea placeholder="Se require estar logueado" name="precondiciones" id="precondiciones"
+                            cols="30" rows="10" class="form-input px-4 py-4 w-full"></textarea>
                     </td>
                     <td class="border border-gray-200">
-                        <textarea placeholder="Correo electrónico: prueba@gmail.com" name="" id="" cols="30" rows="10"
-                            class="form-input px-4 py-4 w-full"></textarea>
+                        <textarea placeholder="Correo electrónico: prueba@gmail.com" name="datosPrueba" id="datosPrueba"
+                            cols="30" rows="10" class="form-input px-4 py-4 w-full"></textarea>
                     </td>
                     <td class="border border-gray-200">
                         <textarea placeholder="Dentro de la carpeta test crear un nuevo archivo, Crear una nueva clase extendiendo a phpunitCrear una funciíon llamada testPOST
-                            " name="" id="" cols="30" rows="10" class="form-input px-4 py-4 w-full"></textarea>
+                            " name="procedimiento" id="procedimiento" cols="30" rows="10"
+                            class="form-input px-4 py-4 w-full"></textarea>
                     </td>
                 </tr>
             </tbody>
@@ -133,15 +138,19 @@
             <tbody>
                 <tr>
                     <td class="border border-gray-200">
-                        <textarea placeholder="El código encargado de recibir la petición regresa un error y no deja continuar"
-                            name="" id="" cols="30" rows="10" class="form-input px-4 py-4 w-full"></textarea>
+                        <textarea
+                            placeholder="El código encargado de recibir la petición regresa un error y no deja continuar"
+                            name="esperado" id="esperado" cols="30" rows="10"
+                            class="form-input px-4 py-4 w-full"></textarea>
                     </td>
                     <td class="border border-gray-200">
-                        <textarea placeholder="El código encargado de recibir la petición no regresa un error y deja continuar aun teniendo los datos mal"
-                            name="" id="" cols="30" rows="10" class="form-input px-4 py-4 w-full"></textarea>
+                        <textarea
+                            placeholder="El código encargado de recibir la petición no regresa un error y deja continuar aun teniendo los datos mal"
+                            name="actual" id="actual" cols="30" rows="10"
+                            class="form-input px-4 py-4 w-full"></textarea>
                     </td>
                     <td class="border border-gray-200">
-                        <select name="" id="" class="form-input px-4 py-4 w-full">
+                        <select name="estatus" id="estatus" class="form-input px-4 py-4 w-full">
                             <option value="Pendiente" selected>Pendiente</option>
                             <option value="Pasado">Pasado</option>
                             <option value="Fallido">Fallido</option>
@@ -154,12 +163,26 @@
         <h2 class="text-2xl font-bold text-gray-800 tracking-tight mb-3">
             Notas
         </h2>
-        <textarea placeholder="  Se debe corregir la linea 18 del archivo inventario.php ya que deja continuar aun teniendo un error."
-                            name="" id="" cols="30" rows="7" class="form-input border border-gray-200 px-4 py-4 w-full"></textarea>
-        <button type="submit" id="btnProcesar" class="mt-4 p-2 pl-5 pr-5 bg-blue-500 text-gray-100 text-lg rounded-lg focus:border-4 border-blue-300 hover:bg-blue-600 transition-colors">Procesar</button>
+        <textarea
+            placeholder="  Se debe corregir la linea 18 del archivo inventario.php ya que deja continuar aun teniendo un error."
+            name="notas" id="notas" cols="30" rows="7"
+            class="form-input border border-gray-200 px-4 py-4 w-full"></textarea>
+        <button id="btnObtenerMD"
+            class="mt-4 p-2 pl-5 pr-5 bg-blue-500 text-gray-100 text-lg rounded-lg focus:border-4 border-blue-300 hover:bg-blue-600 transition-colors">Desargar
+            MD</button>
+        <button type="submit" id="btnObtenerImagen"
+            class="mt-4 p-2 pl-5 pr-5 bg-yellow-500 text-gray-100 text-lg rounded-lg focus:border-4 border-blue-300 hover:bg-yellow-600 transition-colors">Descargar imagen</button>
     </div>
-    <script src="js/app.js"></script>
+    <div class="d-none" id="md"></div>
+    <script src="js/showdown.min.js"></script>
+    <script src="js/html2canvas.min.js"></script>
+    <script>
+          
+    </script>
     
+    <script src="js/app.js"></script>
+
+
 </body>
 
 </html>

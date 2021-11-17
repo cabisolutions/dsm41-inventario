@@ -14,7 +14,7 @@
         <tr>
             <td>InformacionID</td>
             <td>InformacionFechaHora</td>
-            <td>InformacionPrioridad/td>
+            <td>InformacionPrioridad</td>
             <td>InformacionTipoPrueba</td>
             <td>InformacionClase</td>
             <td>InformacionSoftware</td>
@@ -72,6 +72,6 @@
 </table>
 
 ## Notas
-Notas
+ResultadoNotas
 
 
