@@ -81,8 +81,10 @@ btnObtenerMD.addEventListener('click', (e) => {
     // Obtener caso de prueba
     var casoPrueba = obtenerCasoPrueba();
 
+    var nombre = `${document.getElementById('estatus').selectedOptions[0].value}_${document.getElementById('nombre').value}`;
+
     // Descargar md
-    download('casoPrueba.md', casoPrueba);
+    download(`${nombre}.md`, casoPrueba);
 });
 
 
@@ -106,6 +108,8 @@ btnObtenerImagen.addEventListener('click', (e) => {
     var tds = element.getElementsByTagName('td');
     var h1s = element.getElementsByTagName('h1');
     var h2s = element.getElementsByTagName('h2');
+
+    var nombre = `${document.getElementById('estatus').selectedOptions[0].value}_${document.getElementById('nombre').value}`;
 
     for (const tabla of tablas) {
         tabla.classList.add('table-fixed');
@@ -147,7 +151,7 @@ btnObtenerImagen.addEventListener('click', (e) => {
         h2.classList.add('mb-3');
     }
 
-    crearImagen(element);
+    crearImagen(element, nombre);
 });
 
 function obtenerCasoPrueba() {
@@ -183,11 +187,11 @@ function obtenerCasoPrueba() {
 }
 
 
-async function crearImagen(html) {
+async function crearImagen(html, nombre) {
     html2canvas(html).then(function (canvas) {
         var link = document.createElement("a");
         document.body.appendChild(link);
-        link.download = "manpower_efficiency.jpg";
+        link.download = `${nombre}.jpg`;
         link.href = canvas.toDataURL();
         link.target = '_blank';
         link.click();
