@@ -125,14 +125,14 @@ btnObtenerImagen.addEventListener('click', (e) => {
         th.classList.add('border');
         th.classList.add('border-gray-200');
         th.classList.add('px-3');
-        th.classList.add('py-3');
+        th.classList.add('py-2');
     }
 
     for (const td of tds) {
         td.classList.add('border');
         td.classList.add('border-gray-200');
         td.classList.add('px-3');
-        td.classList.add('py-3');
+        td.classList.add('py-2');
     }
 
     for (const h1 of h1s) {
@@ -168,20 +168,56 @@ function obtenerCasoPrueba() {
 
     // Prueba
     casoPrueba = casoPrueba.replace(/PruebaSubseccion/g, document.getElementById('subseccion').value);
-    casoPrueba = casoPrueba.replace(/PruebaNombre/g, document.getElementById('nombre').value);
-    casoPrueba = casoPrueba.replace(/PruebaDescripcion/g, document.getElementById('descripcion').value);
 
-    casoPrueba = casoPrueba.replace(/PruebaPreciondiciones/g, document.getElementById('precondiciones').value);
-    casoPrueba = casoPrueba.replace(/PruebaDatosPrueba/g, document.getElementById('datosPrueba').value);
-    casoPrueba = casoPrueba.replace(/PruebaProcedimiento/g, document.getElementById('procedimiento').value);
+    var nombre = document.getElementById('nombre').value;
+    nombre = nombre.replace(/\n\r?/g, '<br />');
+
+    casoPrueba = casoPrueba.replace(/PruebaNombre/g, nombre)    ;
+
+    // Descriocion
+    var descripcion = document.getElementById('descripcion').value;
+    descripcion = descripcion.replace(/\n\r?/g, '<br />');
+
+    casoPrueba = casoPrueba.replace(/PruebaDescripcion/g, descripcion);
+
+    // Precondiciones
+    var precondiciones = document.getElementById('precondiciones').value;
+    precondiciones = precondiciones.replace(/\n\r?/g, '<br />');
+
+    casoPrueba = casoPrueba.replace(/PruebaPreciondiciones/g, precondiciones);
+
+    // Datos prueba
+    var datosPrueba = document.getElementById('datosPrueba').value;
+    datosPrueba = datosPrueba.replace(/\n\r?/g, '<br />');
+
+    casoPrueba = casoPrueba.replace(/PruebaDatosPrueba/g, datosPrueba);
+
+    // Procedimiento
+    var procedimiento = document.getElementById('procedimiento').value;
+    procedimiento = procedimiento.replace(/\n\r?/g, '<br />');
+
+    casoPrueba = casoPrueba.replace(/PruebaProcedimiento/g, procedimiento);
 
     // Resultado
-    casoPrueba = casoPrueba.replace(/ResultadoEsperado/g, document.getElementById('esperado').value);
-    casoPrueba = casoPrueba.replace(/ResultadoActual/g, document.getElementById('actual').value);
+
+    // Esperado
+    var esperado = document.getElementById('esperado').value;
+    esperado = esperado.replace(/\n\r?/g, '<br />');
+
+    casoPrueba = casoPrueba.replace(/ResultadoEsperado/g, esperado);
+
+    // Actual
+    var actual = document.getElementById('actual').value;
+    actual = actual.replace(/\n\r?/g, '<br />');
+    casoPrueba = casoPrueba.replace(/ResultadoActual/g, actual);
+    
     casoPrueba = casoPrueba.replace(/ResultadoEstatus/g, document.getElementById('estatus').selectedOptions[0].value);
 
     // Notas
-    casoPrueba = casoPrueba.replace(/ResultadoNotas/g, document.getElementById('notas').value);
+    var notas = document.getElementById('notas').value;
+    notas = notas.replace(/\n\r?/g, '<br />');
+    
+    casoPrueba = casoPrueba.replace(/ResultadoNotas/g, notas);
 
     return casoPrueba;
 }
